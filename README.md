@@ -2,10 +2,6 @@
 
 A full-stack habit tracker with streaks, a 26-week heatmap and weekly trends. Mark a day, and the numbers update from the database.
 
-**[Live demo](https://YOUR-APP-URL.example.com)** · demo login: `demo@example.com` / `demo1234`
-
-![Stamp dashboard](docs/screenshot.png)
-
 ![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-16+-339933?logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-4-000000?logo=express&logoColor=white)
@@ -169,7 +165,7 @@ The Vite dev server proxies `/api` to the API, so no extra configuration is need
 Express serves the built React app, so the whole project runs as one web service plus a Postgres database (Render, Railway and Fly.io all work).
 
 1. Create a Postgres instance and copy its connection string.
-2. **Build command:** `cd client && npm install && npm run build && cd ../server && npm install`
+2. **Build command:** `cd client && npm install --include=dev && npm run build && cd ../server && npm install`
 3. **Start command:** `cd server && npm run migrate && npm start`
 4. Set `DATABASE_URL`, `JWT_SECRET` and, if needed, `PGSSL=true`.
 
