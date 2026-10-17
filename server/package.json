@@ -1,0 +1,21 @@
+{
+  "name": "habit-tracker-server",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=14.18" },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "migrate": "node src/migrate.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": { "nodemon": "^3.1.7" }
+}
